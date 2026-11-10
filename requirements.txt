@@ -1,0 +1,15 @@
+langchain
+langgraph
+langchain_groq
+python-dotenv
+
+
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+pypdf
+langchain_openai
+langchain_tavily
+langchain-google-genai
