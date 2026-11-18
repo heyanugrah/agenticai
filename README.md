@@ -1,132 +1,50 @@
-# Agentic AI Experiments
+# AgenticAI 🚀
 
-This repository is a collection of small LangGraph-based AI experiments and proof-of-concepts exploring agent workflows, retrieval-augmented generation, workflow orchestration, and iterative review loops.
+Welcome to the **AgenticAI** repository! This is a hands-on workspace containing code examples, experiments, and practice modules exploring modern agentic workflows, data validation, and LLM orchestration.
 
-The project is intended for learning and experimentation with modern LLM tooling in Python.
+## 📂 Repository Structure
 
-## Overview
+The repository is organized into modular directories reflecting key learning paths and implementations:
 
-These scripts demonstrate different patterns:
-
-- Sequential multi-step processing pipelines
-- Conditional routing and graph-based workflows
-- Retrieval-augmented generation (RAG)
-- Parallel analysis branches
-- Iterative drafting and review loops
-- State management patterns for LangGraph agents
-
-## Project Structure
-
-- `sequential_base.py`  
-  A simple three-stage workflow: edit text -> write script -> localize to Hinglish.
-
-- `iterative.py`  
-  A LinkedIn post generator that drafts content, reviews it, and revises it until approved.
-
-- `conditional_RAG.py`  
-  A college assistant using RAG over PDF documents for academic and fee-related queries.
-
-- `parallel_reducers.py`  
-  A parallel safety-scoring workflow that evaluates text across multiple dimensions.
-
-- `main.py`  
-  Placeholder/sample script; not a full application.
-
-- `states.py`  
-  Notes and examples about different state patterns in LangGraph.
-
-- `academics_handbook.pdf`  
-  Academic policy/reference document used by the RAG example.
-
-- `fee_structure.pdf`  
-  Fee-related document used by the RAG example.
-
-- `.env`  
-  Local environment variables for API keys and service configuration.
-
-## Tech Stack
-
-- Python
-- LangChain
-- LangGraph
-- Groq LLM API
-- Google Gemini
-- Hugging Face embeddings
-- FAISS vector store
-- PyPDF for document loading
-- Tavily for web search
-
-## Requirements
-
-Python 3.10+ is recommended.
-
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
+```
+├── 1-Pydantic/              # Data validation, parsing, and structured output examples using Pydantic
+├── 2-Langchain_Basics/      # Fundamental LangChain loaders, text splitters, and vector storage
+├── 3-LangChain/             # Custom tools, prompt templates, and advanced utilities
+├── 4-LangGraph/             # Stateful multi-agent graphs and orchestration workflows
+├── 6-MCP/                   # Model Context Protocol experiments and server integrations
+└── README.md                # Project documentation
 ```
 
-## Environment Setup
+## 🛠️ Key Topics Covered
 
-Create a `.env` file in the project root and add your API keys. Example:
+* **Data Modeling & Validation:** Utilizing Pydantic to ensure strict output structuring and type safety for LLM interactions.
+* **LangChain Fundamentals:** Building document processing pipelines, chunking strategies, and retrieval setups.
+* **Graph-Based Agent Workflows:** Implementing multi-agent orchestration and state management using LangGraph.
+* **Model Context Protocol (MCP):** Exploring context-aware protocol experiments and integrations.
 
-```env
-GROQ_API_KEY=your_groq_key
-GOOGLE_API_KEY=your_google_api_key
-TAVILY_API_KEY=your_tavily_key
-```
+## 🚀 Getting Started
 
-Some scripts may require additional configuration depending on the model or service used.
+### Prerequisites
 
-## Running the Examples
+* Python 3.10 or higher
+* Pip package manager
 
-### 1. Sequential workflow
+### Installation
 
-```bash
-python sequential_base.py
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/heyanugrah/agenticai.git
+   cd agenticai
+   ```
 
-### 2. Iterative drafting workflow
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-```bash
-python iterative.py
-```
+3. **Configure Environment Variables:**
+   Create a `.env` file in the root directory and add your required API keys and configuration settings.
 
-### 3. Conditional RAG
+## 📄 License
 
-```bash
-python conditional_RAG.py
-```
-
-### 4. Parallel safety analysis
-
-```bash
-python parallel_reducers.py
-```
-
-## Notes
-
-- This is primarily a learning repository for agentic AI patterns.
-- Not all scripts are production-ready applications.
-- Some examples are intentionally experimental and may need small fixes depending on package versions or API changes.
-- The project uses external LLM providers; ensure your keys are valid and have the required quota.
-
-## Typical Use Cases Covered
-
-- Prompt-driven content generation
-- Graph orchestration for business workflows
-- Document-grounded Q&A using RAG
-- Multi-stage AI reasoning and review
-- Parallel branching for analysis tasks
-
-## Future Improvements
-
-- Add a proper CLI interface
-- Standardize script entry points
-- Add tests and validation for each workflow
-- Improve error handling and API fallback logic
-- Package reusable agents and utility functions
-
-## License
-
-This project is for educational and experimental purposes.
+This project is open-source and available under the standard repository terms.
